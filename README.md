@@ -1,7 +1,6 @@
 # Cemexport
 ## Backend
- Para la realizacion del backend se usa java, spring boot, maven, arquitectura hexagonal y la base de datos postgres. El rest api esta compuesto por un crud basico que permite: obtener todos los usuarios (metodo GET), obtener un usuario por id (metodo GET y se envia /{id}), guardar usuario (metodo POST), actualizar usuario (metodo PUT), eliminar usuario (metodo DELETE).
- El principal proyecto del backend es accounds, el commons es una libreria que tiene codigo generico y se puede usar en otros proyectos ya que esta pensado en eso.
+Para la realización del backend se usó java, spring boot, maven, arquitectura hexagonal y la base de datos postgres. El rest api está compuesto por un crud básico que permite: obtener todos los usuarios (metodo GET), obtener un usuario por id (metodo GET y se envia /{id}), guardar usuario (metodo POST), actualizar usuario (metodo PUT), eliminar usuario (metodo DELETE). El principal proyecto del backend es accounds, el commons es una librería que tiene código genérico y se puede usar en otros proyectos ya que está pensado en eso.
 
 
 ####  Data Used
