@@ -1,0 +1,12 @@
+package com.comexport.accounts.user.domains.services;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+import com.comexport.accounts.user.infraestructure.entities.UserEntity;
+import com.comexport.commons.api.domains.services.EndPointServiceImpl;
+import com.comexport.accounts.user.domains.data.UserDTO;
+@Service
+@Qualifier("userService")
+public class UserService  extends EndPointServiceImpl< UserDTO  , UserEntity, String>{
+
+}

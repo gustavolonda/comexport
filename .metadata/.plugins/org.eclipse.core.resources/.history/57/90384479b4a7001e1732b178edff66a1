@@ -1,0 +1,5 @@
+package com.comexport.commons.api.domains;
+
+public class BaseEntity {
+
+}

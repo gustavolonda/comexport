@@ -1,0 +1,5 @@
+package com.comexport.accounts.user.domains.services;
+
+public class UserService {
+
+}

@@ -1,0 +1,5 @@
+package com.comexport.commons.api.domains.services;
+
+public class IEndPointService {
+
+}

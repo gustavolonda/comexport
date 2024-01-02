@@ -1,0 +1,40 @@
+package com.comexport.accounts.user.domains.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Service;
+
+import static com.comexport.accounts.user.infraestructure.confing.Constants.*;
+import com.comexport.accounts.user.infraestructure.entities.UserEntity;
+import com.comexport.accounts.user.infraestructure.repositories.UserRepository;
+import static com.comexport.commons.api.applications.model.StatusDomain.DELETE;
+import com.comexport.commons.api.domains.services.EndPointServiceImpl;
+import com.comexport.accounts.user.domains.data.UserDTO;
+@Service
+@Qualifier(ACCOUNT_SERVICE)
+public class UserService  extends EndPointServiceImpl< UserDTO  , UserEntity, String>{
+	@Autowired
+	UserRepository repository;
+	@Override
+	public JpaRepository<UserEntity, String> getDao() {
+		return this.repository;
+	}
+
+	@Override
+	public UserEntity statusChangeDelete(UserEntity entity) {
+		entity.setStatus(DELETE);
+		return entity;
+	}
+
+	@Override
+	public String nameModule() {
+		return ACCOUNT_MODULE;
+	}
+
+	@Override
+	public String className() {
+		return ACCOUNT_SERVICE;
+	}
+
+}

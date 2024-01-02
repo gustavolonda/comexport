@@ -1,0 +1,9 @@
+package com.comexport.accounts.user.domains.data;
+
+public class UserDTO {
+	private String id;
+	private String firstName;
+	private String lastName;
+	private String phoneNumber;
+	private String photoPath;
+}

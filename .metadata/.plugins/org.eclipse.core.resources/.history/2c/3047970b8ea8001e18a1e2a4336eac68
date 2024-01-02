@@ -1,0 +1,44 @@
+package com.comexport.accounts.user.domains.services;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Service;
+import com.comexport.accounts.user.infraestructure.entities.UserEntity;
+import com.comexport.commons.api.domains.services.EndPointServiceImpl;
+import com.comexport.accounts.user.domains.data.UserDTO;
+@Service
+@Qualifier("userService")
+public class UserService  extends EndPointServiceImpl< UserDTO  , UserEntity, String>{
+	@Autowired
+	UserRepository repository;
+	@Override
+	public JpaRepository<UserEntity, String> getDao() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserEntity statusChangeDelete(UserEntity entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDTO entityToModelDTO(UserEntity entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String nameModule() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String className() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

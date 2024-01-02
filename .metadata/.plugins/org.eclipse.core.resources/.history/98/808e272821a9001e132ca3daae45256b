@@ -1,0 +1,9 @@
+package com.comexport.accounts.user.infraestructure.adapters;
+
+import com.comexport.accounts.user.domains.data.UserDTO;
+import com.comexport.accounts.user.infraestructure.entities.UserEntity;
+import com.comexport.commons.api.infraestructure.adapters.EndPointGenericAdapterImpl;
+
+public class UserAdapter extends EndPointGenericAdapterImpl<UserDTO, UserEntity>{
+
+}

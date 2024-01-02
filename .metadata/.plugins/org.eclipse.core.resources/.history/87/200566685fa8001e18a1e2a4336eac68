@@ -1,0 +1,17 @@
+package com.comexport.commons.api.infraestructure.entities;
+
+import java.security.Timestamp;
+
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
+
+
+@MappedSuperclass
+public class BaseEntity {
+	@Column( columnDefinition = "timestamp NULL")
+    public Timestamp createDate;
+    @Column( columnDefinition = "timestamp NULL")
+    private Timestamp createUpdate;
+    private String status;
+
+}

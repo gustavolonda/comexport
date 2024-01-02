@@ -15,10 +15,10 @@ import com.comexport.accounts.user.domains.data.UserDTO;
 import com.comexport.accounts.user.domains.services.UserService;
 import com.comexport.accounts.user.infraestructure.adapters.UserAdapter;
 
-import static com.comexport.accounts.user.infraestructure.confing.Constants.REQUEST_MAPPING_ACCOUNTS;
+import static com.comexport.accounts.user.infraestructure.confing.Constants.REQUEST_MAPPING_USERS;
 import static com.comexport.commons.api.infraestructure.configs.Constants.REQUEST_MAPPING_BY_ID;
 @RestController
-@RequestMapping(REQUEST_MAPPING_ACCOUNTS)
+@RequestMapping(REQUEST_MAPPING_USERS)
 public class UserController {
 	@Autowired
 	UserService userService;

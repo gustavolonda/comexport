@@ -1,0 +1,8 @@
+package com.comexport.accounts.user.infraestructure.repositories;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository {
+
+}

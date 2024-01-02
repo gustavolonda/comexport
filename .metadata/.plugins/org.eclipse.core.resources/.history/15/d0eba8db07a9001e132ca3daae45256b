@@ -1,0 +1,5 @@
+package com.comexport.accounts.user.applications.rest;
+
+public class UserController {
+
+}

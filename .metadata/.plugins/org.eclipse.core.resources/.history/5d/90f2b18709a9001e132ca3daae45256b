@@ -1,0 +1,5 @@
+package com.comexport.commons.api.infraestructure.adapters;
+
+public class IGenericAdapter {
+
+}

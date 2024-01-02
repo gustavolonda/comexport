@@ -1,0 +1,8 @@
+package com.comexport.accounts.user.infraestructure.repositories;
+
+import org.springframework.stereotype.Repository;
+import com.comexport.accounts.user.infraestructure.entities.UserEntity;
+@Repository
+public interface UserRepository extends JpaRepository<UserEntity, String>{
+
+}

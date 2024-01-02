@@ -1,0 +1,5 @@
+package com.comexport.accounts.user.infraestructure.adapters;
+
+public interface IUserAdapter {
+
+}

@@ -1,0 +1,5 @@
+package com.comexport.commons.api.domains.exception;
+
+public class BaseException {
+
+}

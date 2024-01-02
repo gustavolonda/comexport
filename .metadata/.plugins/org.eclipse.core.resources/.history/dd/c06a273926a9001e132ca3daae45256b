@@ -1,0 +1,57 @@
+package com.comexport.accounts.user.applications.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.comexport.accounts.user.domains.data.UserDTO;
+import com.comexport.accounts.user.domains.services.UserService;
+import com.comexport.accounts.user.infraestructure.adapters.UserAdapter;
+
+import static com.comexport.accounts.user.infraestructure.confing.Constants.REQUEST_MAPPING_ACCOUNTS;
+import static com.comexport.commons.api.infraestructure.configs.Constants.REQUEST_MAPPING_BY_ID;
+@RestController
+@RequestMapping(REQUEST_MAPPING_ACCOUNTS)
+public class UserController {
+	@Autowired
+	UserService userService;
+	
+	@Autowired
+	UserAdapter userAdapter;
+	
+	@GetMapping
+	public ResponseEntity<?> getAll() {
+		return ResponseEntity.ok()
+							.body(userAdapter.toResponseBase(userService.getAll()));
+	}
+	
+	@GetMapping(REQUEST_MAPPING_BY_ID)
+	public ResponseEntity<?> getById(@PathVariable String id) {
+		return ResponseEntity.ok()
+							.body(userAdapter.toResponseBase(userService.getAll()));
+	}
+	
+	@PostMapping
+	public ResponseEntity<?> save(@RequestBody UserDTO userDTO) {
+		return ResponseEntity.ok()
+							.body(userAdapter.toResponseBase(userService.save(userAdapter.toEntity(userDTO))));
+	}
+	
+	@PutMapping
+	public ResponseEntity<?> update(@RequestBody M modelBO) {
+		return ResponseEntity.ok()
+				.body(userAdapter.toResponseBase(userService.save(userAdapter.toEntity(userDTO))));
+
+	}
+
+	@DeleteMapping(REQUEST_MAPPING_BY_ID)
+	public ResponseEntity<?> delete(@PathVariable ID id) {
+		return ResponseEntity.ok().body( iEndPointService.toResponseBase(iEndPointService.delete(id)));
+	}
+}

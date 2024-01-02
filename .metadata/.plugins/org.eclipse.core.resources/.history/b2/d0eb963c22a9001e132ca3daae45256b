@@ -1,0 +1,28 @@
+package com.comexport.accounts.user.infraestructure.adapters;
+
+import static com.comexport.accounts.user.infraestructure.confing.Constants.ACCOUNT_MODULE;
+import static com.comexport.accounts.user.infraestructure.confing.Constants.ACCOUNT_SERVICE;
+
+import com.comexport.accounts.user.domains.data.UserDTO;
+import com.comexport.accounts.user.infraestructure.entities.UserEntity;
+import com.comexport.commons.api.infraestructure.adapters.EndPointGenericAdapterImpl;
+
+public class UserAdapter extends EndPointGenericAdapterImpl<UserDTO, UserEntity>{
+
+	@Override
+	public String nameModule() {
+		return ACCOUNT_MODULE;
+	}
+
+	@Override
+	public String className() {
+		return ACCOUNT_SERVICE;
+	}
+
+	@Override
+	public static UserDTO entityToModelDTO(UserEntity entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
