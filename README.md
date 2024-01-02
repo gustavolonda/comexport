@@ -36,6 +36,7 @@ Para la realización del backend se usó java, spring boot, maven, arquitectura 
     
 
 ## Apicacion movil
-Para el desarrollo de la aplicacion se uso la arquitetura MVVM. Tambien se uso las herramientas retrofit, gradle, ngrok y el lenguaje de programcion java.
+Para el desarrollo de la aplicacion se uso la arquitetura MVVM. Tambien se uso las herramientas retrofit, gradle, ngrok y el lenguaje de programcion java. 
+El proyecto se encuentra en la carpeta ComexportApp
 <code><br><br><br></code>
 <code><p align="center"><img height="600" src="https://github.com/gustavolonda/comexport/blob/main/image/app_examp.PNG" title="app" style="display: block;margin-left: auto;margin-right: auto;"></p></code>
