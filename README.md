@@ -38,5 +38,5 @@
 
 ## Apicacion movil
 Para el desarrollo de la aplicacion se uso la arquitetura MVVM. Tambien se uso las herramientas retrofit, gradle, ngrok y el lenguaje de programcion java.
-<br>
-<code><img height="400" src="https://github.com/gustavolonda/comexport/blob/main/image/app_examp.PNG" title="Aplicacion Movil"></code>
+<code><br><br><br>
+<img height="600" src="https://github.com/gustavolonda/comexport/blob/main/image/app_examp.PNG" title="Aplicacion Movil"></code>
