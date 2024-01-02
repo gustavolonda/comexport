@@ -38,4 +38,4 @@
 
 ## Apicacion movil
 Para el desarrollo de la aplicacion se uso la arquitetura MVVM. Tambien se uso las herramientas retrofit, gradle, ngrok y el lenguaje de programcion java.
-<code><img height="40" src="https://alternativas-a.com/wp-content/uploads/alternativas-a-Visual-Studio-Code-150x150.jpg" title="Visual Code"></code>
+<code><img height="400" src="https://github.com/gustavolonda/comexport/blob/main/image/app_examp.PNG" title="Aplicacion Movil"></code>
